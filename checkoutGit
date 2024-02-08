@@ -1,0 +1,11 @@
+def call(string giturl, string gitBranch) {
+    checkout([
+        $class: 'GITSCM',
+        branches: [[name: gitbranch]],
+        userRemoteConfigs: [[gitUrl]]
+
+
+    )]
+
+
+}
